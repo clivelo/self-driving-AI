@@ -6,7 +6,7 @@ A simulated self-driving car AI coded in Javascript, using p5.js for animation a
 A track consists of walls that the car may crash into. Scattered throughout the track are checkpoints (colored as yellow) that serve as milestones that increase the fitness score of a car. A lap's start and finish (colored as green) acts as a checkpoint, it also serves to count the number of laps a car has finished.
 
 ## Neural Network
-The neural network consists of three layers. The input layer consists of 20 nodes, they correspond to the distance between each of the 20 sensors and the closest wall in its given direction. They are connected to one hidden layer that consists of 8 nodes, which is then connected to the output layers consisted of 4 nodes. The output of the neural network is the four movements that a car can operate (i.e., forward, backward, rotate left, rotate right).
+The neural network is constructed using the TensorFlow library. It consists of three layers. The input layer consists of 20 nodes, they correspond to the distance between each of the 20 sensors and the closest wall in its given direction. They are connected to one dense layer that consists of 8 nodes, which is then connected to the output layers consisted of 4 nodes. The output of the neural network is the four movements that a car can operate (i.e., forward, backward, rotate left, rotate right).
 
 ## Evolutionary Algorithm
 
